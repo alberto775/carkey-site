@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarKey Mobile</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("ru")) {
+                window.location.href = "index_ru.html";
+            } else if (userLang.startsWith("en")) {
+                window.location.href = "index_en.html";
+            } else {
+                // Default to Lithuanian
+                window.location.href = "index_lt.html";
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Peradresavimas...</p>
+</body>
+</html>
