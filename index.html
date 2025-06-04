@@ -1,25 +1,25 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Redirecting...</title>
-    </head>
-    <body>
-        <h2>Redirecting based on your language...</h2>
-        
-    <script>
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.startsWith('lt')) {
-        window.location.href = 'index_lt.html';
-      } else if (userLang.startsWith('ru')) {
-        window.location.href = 'index_ru.html';
-      } else {
-        window.location.href = 'index_en.html';
-      }
-    </script>
-    
-    </body>
-    </html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarKey Mobile</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #language-switcher button { margin-left: 5px; }
+  </style>
+</head>
+<body>
+  <div id="language-switcher">
+    <button onclick="setLanguage('lt')">LT</button>
+    <button onclick="setLanguage('ru')">RU</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+
+  <h1 data-i18n="title">Мобильный сервис ключей</h1>
+  <p data-i18n="description">Профессиональный ремонт и программирование ключей</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
