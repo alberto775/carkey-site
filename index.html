@@ -1,0 +1,79 @@
+<!-- Оригинальная страница сайта начинается -->
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <title>CarKey Mobile</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
+    header { background: #111; padding: 1rem 2rem; color: white; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; max-width: 960px; margin: auto; }
+    .services, .pricing, .contact-form { background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; }
+    h1, h2 { color: #003366; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: .5rem; }
+    input, textarea { width: 100%; padding: .5rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #003366; color: white; padding: .6rem 1.2rem; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0055a5; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>CarKey Mobile</strong></div>
+    <nav>
+      <a href="#services">Paslaugos</a>
+      <a href="#pricing">Kainos</a>
+      <a href="#contact">Kontaktai</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Automobilių raktų programavimas ir remontas</h1>
+    <p>Mobilus servisas – greitai atvykstame į vietą</p>
+    <a href="tel:+37060421754">
+      <button>📞 Skambinti dabar</button>
+    </a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Paslaugos</h2>
+    <ul>
+      <li>🔑 Programavimas ir kopijavimas</li>
+      <li>🔧 Korpuso ir mygtukų keitimas</li>
+      <li>🚗 Avarinis atrakinimas</li>
+      <li>🛠 Diagnostika ir lustų pririšimas</li>
+    </ul>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Kainoraštis</h2>
+    <ul>
+      <li>Programavimas – nuo 30 €</li>
+      <li>Korpuso keitimas – nuo 15 €</li>
+      <li>Diagnostika – nemokamai</li>
+      <li>Iškvietimas mieste – įskaičiuota</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Susisiekite su mumis</h2>
+    <form action="https://formspree.io/f/xpzvwyzr" method="POST">
+      <div class="form-group">
+        <label for="name">Vardas:</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">El. paštas:</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Žinutė:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Siųsti</button>
+    </form>
+  </section>
+</body>
+</html>
