@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktai - CarKey Mobile</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 8px; }
+        h2 { color: #003366; }
+        p { font-size: 16px; }
+        a { color: #0033cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        label, input, textarea, button { display: block; width: 100%; margin-bottom: 15px; }
+        button { width: auto; background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background-color: #002244; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Apie mus</h2>
+        <p>Profesionalus servisas su praktine patirtimi autoelektronikoje, litavime, raktų programavime ir klientų aptarnavime. Dirbame greitai, kokybiškai ir sąžiningai.</p>
+
+        <h2>Susisiekite</h2>
+        <p><strong>Telefonas:</strong> <a href="tel:+37060421754">+37060421754</a></p>
+        <p><strong>El. paštas:</strong> <a href="mailto:glinkautokey@gmail.com">glinkautokey@gmail.com</a></p>
+
+        <form>
+            <label for="name">Vardas:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefono numeris:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="message">Komentaras ar klausimas...</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Siųsti</button>
+        </form>
+    </div>
+</body>
+</html>
