@@ -1,60 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarKey Mobile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarKey Mobile</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>🔑 CarKey Mobile</h1>
-        <nav>
-            <a href="index_lt.html">LT</a> |
-            <a href="index_en.html">EN</a> |
-            <a href="index_ru.html">RU</a>
-        </nav>
-    </div>
-</header>
-<main>
-    <section>
-        <h2>Apie mus</h2>
-        <p>Profesionalus servisas su praktine patirtimi autoelektronikoje, litavime, raktų programavime ir klientų aptarnavime.</p>
+  <header>
+    <div class="logo">🔑 CarKey Mobile</div>
+    <nav><a href="index_lt.html">LT</a> | <a href="index_en.html">EN</a> | <a href="index_ru.html">RU</a></nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>О нас</h2>
+      <p>Профессиональный сервис с опытом в автоэлектронике, пайке, программировании ключей и обслуживании клиентов.</p>
+
+      <h3>Услуги</h3>
+      <ul>
+        <li>🔑 Программирование и копирование ключей</li>
+        <li>🛠 Замена кнопок и корпусов</li>
+        <li>🚗 Аварийное вскрытие</li>
+        <li>⚙ Диагностика и привязка чипов</li>
+      </ul>
+
+      <h3>Цены</h3>
+      <ul>
+        <li>Программирование — от 30 €</li>
+        <li>Замена корпуса — от 15 €</li>
+        <li>Диагностика — бесплатно</li>
+        <li>Выезд по городу — включено</li>
+      </ul>
+
+      <h3>Свяжитесь с нами</h3>
+      <p><strong>Телефон:</strong> +37060421754<br />
+      <strong>Эл. почта:</strong> glinkautokey@gmail.com</p>
+
+      <form action="https://formspree.io/f/xblylrgd" method="POST">
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="tel" name="phone" placeholder="Номер телефона" required />
+        <textarea name="message" placeholder="Комментарий или вопрос..." required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
-    <section>
-        <h2>Paslaugos</h2>
-        <ul>
-            <li>🔑 Programavimas ir kopijavimas</li>
-            <li>🔧 Mygtukų ir korpusų keitimas</li>
-            <li>🚗 Avarinis atrakinimas</li>
-            <li>🛠 Diagnostika ir čipų pririšimas</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Kainoraštis</h2>
-        <ul>
-            <li>Programavimas — nuo 30 €</li>
-            <li>Korpuso keitimas — nuo 15 €</li>
-            <li>Diagnostika — nemokamai</li>
-            <li>Iškvietimas mieste — įskaičiuota</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Susisiekite</h2>
-        <p><strong>Telefonas:</strong> +37060421754</p>
-        <p><strong>El. paštas:</strong> glinkautokey@gmail.com</p>
-        <form action="https://formspree.io/f/xblylrgd" method="POST">
-            <input type="text" name="name" placeholder="Vardas" required>
-            <input type="text" name="phone" placeholder="Telefono numeris" required>
-            <textarea name="message" placeholder="Komentaras ar klausimas..." required></textarea>
-            <button type="submit">Siųsti</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p>© 2025 CarKey Mobile</p>
-</footer>
+  </main>
+  <footer>&copy; 2025 CarKey Mobile</footer>
 </body>
 </html>
