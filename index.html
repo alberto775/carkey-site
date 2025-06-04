@@ -5,16 +5,18 @@
   <title>Redirecting...</title>
   <script>
     const lang = navigator.language || navigator.userLanguage;
-    if (lang.startsWith("lt")) {
-      window.location.href = "index_lt.html";
-    } else if (lang.startsWith("ru")) {
-      window.location.href = "index_ru.html";
+    const langCode = lang.substring(0, 2).toLowerCase();
+
+    if (langCode === 'ru') {
+      window.location.href = 'index_ru.html';
+    } else if (langCode === 'en') {
+      window.location.href = 'index_en.html';
     } else {
-      window.location.href = "index_en.html";
+      window.location.href = 'index_lt.html';
     }
   </script>
 </head>
 <body>
-  <p>Redirecting based on your language...</p>
+  <p>Redirecting...</p>
 </body>
 </html>
