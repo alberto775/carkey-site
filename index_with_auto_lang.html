@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html lang="lt">
+<head>
+<meta charset="utf-8"/>
+<title>CarKey Mobile</title>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+        body { font-family: Arial, sans-serif; padding: 2em; background: #f4f4f4; }
+        form { background: #fff; padding: 2em; border-radius: 8px; max-width: 500px; margin: auto; }
+        input, textarea { width: 100%; padding: 0.8em; margin-bottom: 1em; border-radius: 4px; border: 1px solid #ccc; }
+        button { padding: 0.8em 2em; background: #004aad; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+        h2 { text-align: center; color: #004aad; }
+    </style>
+</head>
+<body>
+<h2>Susisiekite su mumis</h2>
+<form action="https://formspree.io/f/xpzvwyzr" method="POST">
+<label>Vardas:<br/>
+<input name="name" required="" type="text"/>
+</label><br/>
+<label>El. paštas:<br/>
+<input name="email" required="" type="email"/>
+</label><br/>
+<label>Žinutė:<br/>
+<textarea name="message" required="" rows="5"></textarea>
+</label><br/>
+<button type="submit">Siųsti</button>
+</form>
+<script>
+(function() {
+  const savedLang = localStorage.getItem("preferredLang");
+  if (!savedLang) {
+    const lang = navigator.language || navigator.userLanguage;
+    let redirect;
+    if (lang.startsWith("ru")) redirect = "index_ru.html";
+    else if (lang.startsWith("en")) redirect = "index_en.html";
+    else redirect = "index.html";
+    if (location.pathname.endsWith("/") || location.pathname.endsWith("index.html")) {
+      if (!location.pathname.endsWith(redirect)) {
+        window.location.href = redirect;
+      }
+    }
+  } else {
+    if (!location.pathname.endsWith(`index_${savedLang}.html`) && !(savedLang === "lt" && location.pathname.endsWith("index.html"))) {
+      window.location.href = savedLang === "lt" ? "index.html" : `index_${savedLang}.html`;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("a[href^='index_'], a[href='index.html']").forEach(link => {
+      link.addEventListener("click", function(e) {
+        const lang = this.getAttribute("href").replace("index_", "").replace(".html", "") || "lt";
+        localStorage.setItem("preferredLang", lang);
+      });
+    });
+  });
+})();
+</script></body>
+</html>
