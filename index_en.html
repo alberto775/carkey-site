@@ -2,23 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CarKey Mobile</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="index_lt.html">LT</a> |
-    <a href="index_en.html">EN</a> |
-    <a href="index_ru.html">RU</a>
-  </nav>
-  <div class="container">
-    <h1>About us</h1>
-    <p>Professional service with practical experience in auto electronics, soldering, key programming and customer service.</p>
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +37060421754</p>
-    <p><strong>Email:</strong> glinkautokey@gmail.com</p>
-  </div>
+    <nav>
+        <ul class="lang-menu">
+            <li><a href="index_lt.html">LT</a></li>
+            <li><a href="index_en.html">EN</a></li>
+            <li><a href="index_ru.html">RU</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about">
+            <h1>About Us</h1>
+            <p>Professional service with practical experience in auto electronics, soldering, key programming and customer service.</p>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +37060421754</p>
+            <p><strong>Email:</strong> glinkautokey@gmail.com</p>
+            <form action="https://formspree.io/f/xblylrgd" method="POST">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="text" name="phone" placeholder="Phone number" required />
+                <textarea name="message" placeholder="Comment or question..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
